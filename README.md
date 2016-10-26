@@ -1,5 +1,5 @@
 # Producer [![NuGet Version](https://img.shields.io/badge/nuget-1.0.0-blue.svg?style=flat)](https://www.nuget.org/packages/Producer)
-If you would like improve 80x times code execution in your dependency injection container this library can be for you.
+If you would like improve 20x times code execution in your dependency injection container this library can be for you.
 
 # How to
 
