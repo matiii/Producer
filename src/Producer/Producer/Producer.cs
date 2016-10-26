@@ -6,6 +6,13 @@
 
     public static class Producer
     {
+
+        /// <summary>
+        /// Produce delagate which allow to create new instance.
+        /// </summary>
+        /// <typeparam name="T">Class to create.</typeparam>
+        /// <param name="parameters">Parameters in T constructor.</param>
+        /// <returns>Delegate to create instance of T.</returns>
         public static Func<object[], T> Produce<T>(params Type[] parameters) where T : class
         {
             Type type = typeof(T);
@@ -39,5 +46,12 @@
 
             return default(Func<object[], T>);
         }
+
+        /// <summary>
+        /// Produce delagate which allow to create new instance with empty constructor.
+        /// </summary>
+        /// <typeparam name="T">Class to create.</typeparam>
+        /// <returns>Delegate to create instance of T.</returns>
+        public static Func<object[], T> Produce<T>() where T : class => Produce<T>(Type.EmptyTypes);
     }
 }
