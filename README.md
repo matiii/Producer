@@ -1,4 +1,4 @@
-# Producer
+# Producer [![NuGet Version](https://img.shields.io/badge/nuget-1.0.0-blue.svg?style=flat)](https://www.nuget.org/packages/Dijkstra.NET)
 If you would like improve 80x times code execution in your dependency injection container this library can be for you.
 
 # How to
@@ -47,3 +47,9 @@ Type=Benchmark  Mode=Throughput
 # How it works
 
 Library generate IL code to create new object. Produce generic method instead of Activator.CreateInstance first build delegate, which next you can cache to create new instances. Activator.CreateInstance has to all the time build logic to create new object. 
+
+# License
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://github.com/matiii/Dijkstra.NET/blob/master/LICENSE)
+
+Producer is licensed under the MIT license. See [LICENSE](LICENSE) file for full license information.
